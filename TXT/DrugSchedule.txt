@@ -1,0 +1,17 @@
+Your next appointment Dates
+
+ Day | Medication | Unit of Measure | Dosage | Notes
+Monday : Paracetamol, Mg, 5mg, at breakfast and Lunch time
+Tuesday : Ampicillin, Mg, 250mg, at dinner
+Wednesday : Paracetamol, Mg, 5mg, at breakfast 
+Thursday : Ibuproven, Mg, 10mg, at Lunch time
+Friday : Erythromicin, Mg, 15mg, at dinner 
+Saturday : Panadol, Mg, 250mg, at breakfast and Lunch time
+Sunday : Arthemeter, Mg, 5mg, at lunch and dinner 
+
+
+
+
+
+
+

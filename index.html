@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+
+    <!-- Scroll Reveal -->
+    <link rel="stylesheet" href="./scrollreveal.js" />
+
+    <!-- Boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <title>Health Plus</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container flex">
+        <a href="#" class="logo-content flex">
+          <img src="./img/Logo/Healthlogo.png" alt="" />
+        </a>
+
+        <div class="menu-content">
+          <ul class="menu-list flex">
+            <li><a href="#home" class="nav-link active-navlink">home</a></li>
+            <li><a href="#services" class="nav-link">services</a></li>
+            <li><a href="#resources" class="nav-link">resources</a></li>
+            <li><a href="#contact" class="nav-link">contact</a></li>
+          </ul>
+
+          <div class="media-icons flex">
+            <a href="https://www.facebook.com"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://www.twitter.com"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+
+          <i class="bx bx-x navClose-btn"></i>
+        </div>
+
+        <div class="contact-content flex">
+          <!-- <i class="fa-solid fa-phone"></i> -->
+          <!-- <span class="phone-number"></span> -->
+          <a href="#" class="logo-content flex">
+            <span class="user"
+              ><i class="fas fa-user"></i>
+              <h3>Welcome</h3>
+              <h3 id="username"></h3
+            ></span>
+          </a>
+        </div>
+        <span>
+          <i class="fas fa-eye" style="color: white"></i>
+          <h3 id="count" style="color: white"></h3
+        ></span>
+
+        <i class="bx bx-menu navOpen-btn"></i>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <main>
+      <section class="home" id="home">
+        <div class="home-content">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/doctor.jpg" alt="" class="home-img" />
+
+                <div class="home-details">
+                  <div class="home-text">
+                    <h2 class="homeTitle">Good Health, Great Life.<br /></h2>
+                    <h4 class="homeSubtitle">
+                      we believe good health is the key to a happier life
+                    </h4>
+                  </div>
+
+                  <button class="button">Book appointment</button>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/he.jpg" alt="" class="home-img" />
+
+                <div class="home-details">
+                  <div class="home-text">
+                    <h2 class="homeTitle">Health Access Made Easy<br /></h2>
+                    <h4 class="homeSubtitle">
+                      Book appointments with a healthcare provider<br />
+                      schedule medication and store your vitals all in one
+                      place.
+                    </h4>
+                  </div>
+
+                  <button class="button"><a href="#services">Get Started</a> </button>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/gif.jpg" alt="" class="home-img" />
+
+                <div class="home-details">
+                  <div class="home-text">
+                    <h2 class="homeTitle">Lifestyle Advice For Free <br /></h2>
+                    <h4 class="homeSubtitle">
+                      Receive lifestyle tips to improve your<br />
+                      wellbeing at your convenience with no extra cost.
+                    </h4>
+                  </div>
+
+                  <button class="button">Explore</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services and appointment section -->
+      <section id="services">
+        <div class="contain">
+          <div>
+            <!-- Button trigger modal -->
+            <a
+              type="img"
+              data-bs-toggle="modal" 
+              data-bs-target="#staticBackdrop"
+            >
+              <img src="./img/a/make_appointment.png" class="ig" alt="" />
+            </a>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Schedule appointment
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Date</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="inputEmail4" required
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label"
+                          >Time</label
+                        >
+                        <input required
+                          type="time"
+                          class="form-control"
+                          id="inputPassword4"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label"
+                          >Your Address</label
+                        >
+                        <input required
+                          type="text"
+                          class="form-control"
+                          id="inputAddress"
+                          placeholder="125 Federal Housing Calabar"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress2" class="form-label"
+                          >Country</label
+                        >
+                        <input required
+                          type="country"
+                          class="form-control"
+                          id="inputAddress2"
+                          placeholder="India, Nigeria etc"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input required
+                          type="text"
+                          class="form-control"
+                          id="inputCity"
+                        />
+                      </div>
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select" required>
+                          <option selected>Africa</option>
+                          <option>America</option>
+                          <option>Arctic</option>
+                          <option>Asia</option>
+                          <option>Europe</option>
+                          <option>Greenland</option>
+                          <option>Himalaya</option>
+                          <option>Oceania</option>
+                          <option>South America</option>
+                        </select>
+                      </div>
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" required />
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="gridCheck" required
+                          />
+                          <label class="form-check-label" for="gridCheck">
+                            In order to continue, please accept our terms of use
+                            and privacy
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- drug schedule -->
+          <div>
+            <div>
+              <a >
+                <img src="./img/a/drug_schedule2.png" alt="">
+              </a>
+            </div>
+          </div>
+
+          <!-- vital sign -->
+          <div>
+            <div>
+            <!-- Button trigger modal -->
+<a type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <img src="./img/a/vital_sign2.png" alt="">
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">vital Sign</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          
+          <label for="exampleInputEmail1" class="form-label">Test type</label>
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example" required>
+            <option selected>Liver function</option>
+            <option value="1">FSH</option>
+            <option value="2">Malaria</option>
+            <option value="3">Hepatitis</option>
+            <option value="3">Fasting blood sugar</option>
+            <option value="3">Blood pressure</option>
+          </select>
+
+          <label for="exampleInputEmail1" class="form-label">Blood group</label>
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example" required>
+            <option selected>O+</option>
+            <option value="1">A+</option>
+            <option value="2">B+</option>
+            <option value="3">AB+</option>
+            <option value="3">AB-</option>
+            <option value="3">A-</option>
+          </select>
+
+          <label for="exampleInputEmail1" class="form-label">Genotype</label>
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example" required>
+            <option selected>O</option>
+            <option value="1">AA</option>
+            <option value="2">AS</option>
+            <option value="3">B</option>
+            <option value="3">AB</option>
+          </select>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">How do you feel?</label>
+            <input type="message" class="form-control" required>
+    
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">We'll never share your data with anyone else</label>
+          </div>
+          <button type="submit" class="btn btn-primary" >Submit</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Viewing of appointment etc -->
+
+      <section class="appointments">
+        <div class="contain-box">
+          <div>
+            <a href="./TXT/NextAppointment.txt" download="NextAppoint"
+              >View Appointment</a
+            >
+          </div>
+          <div>
+            <a href="./TXT/DrugSchedule.txt" download> View Drug schedule</a>
+          </div>
+          <div>
+            <a href="./TXT/HealthReport.txt" download="/TXT/HealthReport.txt"
+              >View vital sign</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Section -->
+      <section class="video_sect" id="resources">
+        <!-- Blue Video Section -->
+        <section class="bluevideo">
+          <div class="text1">
+            <h2>Stay Hydrated, Stay Healthy</h2>
+            <p>
+              Did you know that water makes up 60% of the human body? Hydration
+              is essential to a healthy body and mind. Learn how to drink more
+              water and improve your wellbeing in this video.
+            </p>
+          </div>
+
+          <div class="video1">
+            <video
+              class="vidmain"
+              controls
+              poster="./techwiz multimedia/img/engin-akyurt-PCpoG06fcUI-unsplash.jpg"
+            >
+              <source
+                src="./techwiz multimedia/video/Make_Water_Your_Drink_of_Choice(720p).mp4"
+              />
+            </video>
+          </div>
+        </section>
+
+        <!-- Black Video Section -->
+        <section class="blackvideo">
+          <div class="video2">
+            <video
+              class="vidmain"
+              controls
+              poster="./techwiz multimedia/img/anna-pelzer-IGfIGP5ONV0-unsplash.jpg"
+            >
+              <source
+                src="./techwiz multimedia/video/How_to_Eat_More_Vegetables 2021.mp4"
+              />
+            </video>
+          </div>
+
+          <div class="text2">
+            <h2>Eat Well, Live Well</h2>
+            <p>
+              In today's world of processed foods and high calorie diets, eating
+              healthy can be challenging. A balanced diet is fundamental for
+              wellness. In this video, learn to boost your health by eating more
+              vegetables.
+            </p>
+          </div>
+        </section>
+
+        <!-- Sound Bite Section-->
+        <section class="soundbite">
+          <h2>Sound Bite</h2>
+          <div class="audio">
+            <audio controls>
+              <source
+                src="./techwiz multimedia/audio/Body Scan 4 min 39 sec.m4a"
+              />
+            </audio>
+            <audio controls>
+              <source
+                src="./techwiz multimedia/audio/Cloud Push 3 min 14 sec.m4a"
+              />
+            </audio>
+            <audio controls>
+              <source
+                src="./techwiz multimedia/audio/Washing Hands Mindfully 2 min 36 sec.m4a"
+              />
+            </audio>
+          </div>
+        </section>
+      </section>
+
+      <!-- CONTACT AND FEEDBACK FORM -->
+      <section class="hero" id="contact">
+        <div class="line">
+          <!-- Contact -->
+          <h1>Contact Us</h1>
+          <i class="fa fa-location-pin"
+            ><a href="">13 Maryland Street,Calabar</a></i
+          ><br />
+          <i class="fa fa-phone"><a href="">+2348182356559</a></i
+          ><br />
+          <i class="fa fa-envelope"><a href="">Mail@healthplus.com</a></i>
+        </div>
+        <!-- Feedback -->
+        <div class="plan">
+          <h1>Feedback</h1>
+          <input type="text" placeholder="Your Feedback" id="lala" /><br />
+          <a href="#"
+            ><button>Send<i class="fa fa-paper-plane"></i></button
+          ></a>
+        </div>
+      </section>
+
+      <!-- FOOTER AND CONTINUOUS SCROLLING TICKER -->
+      <footer class="footer">
+        <div>
+          <div id="copyrights">
+            <p>
+              Health Plus&copy; 2022 | Site created by Tech Ranger <span></span>
+            </p>
+          </div>
+          <div class="scrolling_ticker">
+            <div class="scrolling_ticker_list">
+              <div class="scrolling_ticker_item">
+                <p><span id="time"> </span></p>
+              </div>
+              <div class="scrolling_ticker_item">
+                <p><span id="date"> </span></p>
+              </div>
+              <div class="scrolling_ticker_item">
+                <p><span id="location"> </span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Scroll Up -->
+      <a href="#home" class="scrollUp-btn flex">
+        <i class="bx bx-up-arrow-alt scrollUp-icon"></i>
+      </a>
+    </main>
+
+    <!-- Swiper JS -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  -->
+    <script src="./swiper-bundle.min.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="./scrollreveal.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./index.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
